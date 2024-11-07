@@ -4,13 +4,13 @@
 # Expected outcome: The functions from the custom module are used in main.py.
 
 # Import the custom module
-import text_utils
+import text_utils as tu
 
 # Use the functions from the custom module
 user_name = input("Enter your name: ").lower()
 
-reversed_name = text_utils.reverse_string(user_name)
+reversed_name = tu.reverse_string(user_name)
 
-alias = text_utils.capitalize_string(reversed_name)
+alias = tu.capitalize_string(reversed_name)
 
 print(f"Your alias is: {alias}")
